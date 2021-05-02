@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>FaceBook | Login or Sign Up</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        #header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: rgb(67 104 171);
+            border-bottom: 0.2rem solid rgb(52, 52, 177);
+        }
+
+        #header img {
+            width: 27rem;
+            height: 9rem;
+            transform: translate(-5rem);
+        }
+
+        #loginform {
+            display: flex;
+            flex-wrap: wrap;
+            width: 41.5rem;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        #loginform p {
+            color: white;
+            margin: 0.4rem 0rem;
+        }
+
+        #loginform input {
+            border: .15px solid black;
+            padding: 0.25rem 0.5rem;
+        }
+
+        .lablep {
+            padding-top: 1.4rem;
+        }
+
+        #btn {
+            color: white;
+            background-color: rgb(80 80 198 / 75%);
+            border: 0.2rem solid rgb(36, 72, 150) !important;
+            padding: 0.25rem;
+            margin-top: 2.3rem;
+        }
+
+        #btn:hover {
+            background-color: rgb(61, 61, 172);
+            cursor: pointer;
+        }
+
+        .forgotpass a {
+            color: rgba(255, 255, 255, 0.555);
+            text-decoration: none;
+        }
+        /* SignUp form deisgining */
+        #signuppage{
+            margin-top: 2rem;
+            width: 100vw;
+            height: 87.9vh;
+            background-image: linear-gradient( white 3%, #dfe3ee);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #content{
+            /* display: none; */
+            color: rgb(36, 72, 150);
+            font-size: 2.3rem;
+            font-weight: 600;
+            width: 60rem;
+        }
+        #content img{
+            width: 60rem;
+            height: 24rem;
+        }
+
+        #signupform{
+            display: flex;
+            flex-direction: column;
+        }
+        #signupform h2{
+            font-size: 4.5rem;
+            margin: 0rem;
+            font-weight: bolder;
+        }
+        #signupform>p{
+            font-size: 2rem;
+            margin: 0.6rem 0rem;
+            margin-bottom: 1.6rem;
+        }
+        .formbar{
+            border: 0.15rem solid #b4c0e2;
+            border-radius: 0.4rem;
+            margin: 0.7rem;
+            padding: 1rem;
+            width: 20rem;
+        }
+        #mobnumoremail, #password{
+            width: 44.3rem;
+        }
+        #dob, #gender{
+            transform: translate(1.1rem);
+            margin-top: 1.6rem;
+        }
+        span{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #808080b9;
+        }
+        input[type="date"], input[type="radio"]{
+            margin-top: .8rem;
+        }
+        #signupform label{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        #signupform label:hover{
+            cursor: pointer;
+        }
+        #checkbox p{
+            color:#757474;
+            font-size: 1.3rem;
+            width: 38rem;
+            transform: translate(1.1rem);
+            padding: 1rem 0rem;
+        }
+        #checkbox p a{
+            text-decoration: none;
+            color: rgb(52, 52, 177);
+        }
+        #signupform input[type="submit"]{
+            padding: .8rem 5rem;
+            transform: translate(1.1rem);
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+            background-color: #24a810;
+            border-radius: 0.4rem;
+            border: none;
+            transition-property: background-color;
+            transition-duration: .5s;
+        }
+        #signupform input[type="submit"]:hover{
+            background-color: #1e8a0e;
+        }
+        @media(max-width:900px) {
+            html{
+                font-size: 45%;
+            }
+        }
+        @media(max-width:450px) {
+            html{
+                font-size: 35%;
+            }
+            #content{
+            display: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img src="facebooklogo.png" alt="FaceBook">
+        <form action="" id="loginform">
+            <label class="lableg" for="Email or phone">
+                <p>Email or phone</p>
+                <input type="text" class="Email or phone">
+            </label>
+            <label for="Password" class="lablep">
+                <p>Password</p>
+                <input type="password" class="Password">
+                <div class="forgotpass">
+                    <a href="#">Forgotten account?</a>
+                </div>
+            </label>
+            <input id="btn" type="submit" value="Log In">
+        </form>
+    </header>
+
+    <section id="signuppage">
+        <div id="content">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+            <img src="peoplemap.png" alt="Facebook Connects People Across World.">
+        </div>
+        <form id="signupform">
+            <h2>Create an account</h2>
+            <p>It's quick and easy.</p>
+            <div id="name">
+                <input type="text" placeholder="First name" class="formbar">
+                <input type="text" placeholder="Surname" class="formbar">
+            </div>
+            <div>
+                <input type="email, tel" placeholder="Mobile number or email address" class="formbar" id="mobnumoremail">
+            </div>
+            <div>
+                <input type="password" placeholder="New password" class="formbar" id="password">
+            </div>
+            <div id="dob">
+                <span>Birthday</span>
+                <br>
+                <input type="date">
+            </div>
+            <div id="gender">
+                <span>Gender</span>
+                <br>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">Female
+                </label>
+
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male">Male
+                </label>
+
+                <label for="other">
+                    <input type="radio" name="gender" id="other" value="other">Other
+                </label>
+            </div>
+            <div id="checkbox">
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>,<a href="#"> Data Policy</a> and <a href="#">Cookie Policy.</a>
+                 You may receive SMS notifications from us and can opt out any time.</p>
+            </div>
+            <div id="signupbtn">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+
+    </section>
+
+</body>
+
+</html>
